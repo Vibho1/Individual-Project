@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A web page about IoT Applications" />
+    <meta name="author" content="Vibho" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+       
+
+    <title>IoT Data</title>
+
+    <style>
+      h1{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#navbar {
+    font-size: 28px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+  
+    </style>
+
+
+  </head>
+
+<div class="container">
+    <body>
+        <h1>Register New Device</h1>
+        <marquee behaviour="scroll" direction="left" scrollamount="15" style="color:blue; font-size:26px"> Enter the user name and device to get your data stored in table!</marquee>
+        <form  class="was-validated">
+        
+        <ul id="navbar">
+          <li><a class="active" href="register-device.html">Register Device</a></li>
+          <li><a href="iot-data.html">Registered Devices</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+
+        
+
+            <div class="form-group">
+                <label for="user">User</label>
+                <input type="text" class="form-control" id="user" placeholder="Enter username" name="uname" required/>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+
+              </div>
+              
+              <div class="form-group">
+                <label for="name">Device Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter device name" name="pswd" required/>
+                <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember" required> I agree to give my details.
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Check this checkbox to continue.</div>
+                </label>
+              </div>
+              
+              <button class="btn btn-success" id="add-device">Save</button>
+    
+      </body>
+      <script src="app.js"></script>
+
+</div>
+</html>
